@@ -1,0 +1,175 @@
+﻿<!-- Hero -->
+<div>
+    <picture>
+        <source media="(min-width:1200px)" srcset="https://placehold.co/1200x200" />
+        <img src="https://placehold.co/375x200" class="img-fluid w-100" alt="banner" />
+    </picture>
+</div>
+<!-- Breadcrum User Schedules-->
+<nav aria-label="breadcrumb" class="my-3">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Users</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Schedules</li>
+    </ol>
+</nav>
+<!-- Schedule -->
+<div class="row py-2 py-md-4 g-2 g-md-4">
+    <div class="col-12 col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <form class="row g-2 g-md-4">
+                    <div class="col-12">
+                        <label for="Username" class="form-label">User Name</label>
+                        <input type="email"
+                               class="form-control text-muted"
+                               id="Username"
+                               aria-describedby="emailHelp"
+                               readonly
+                               value="email@gmail.com" />
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="FirstName" class="form-label">First Name</label>
+                        <input type="email"
+                               class="form-control text-muted"
+                               id="FirstName"
+                               readonly
+                               value="Roy" />
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="LastName" class="form-label">Last Name</label>
+                        <input type="email"
+                               class="form-control text-muted"
+                               id="LastName"
+                               readonly
+                               value="Le" />
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="PhoneNumber" class="form-label">Phone Number</label>
+                        <input type="tel"
+                               class="form-control text-muted"
+                               id="PhoneNumber"
+                               readonly
+                               value="0355341918" />
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="email"
+                               class="form-control text-muted"
+                               id="Email"
+                               readonly
+                               value="email@gmail.com" />
+                    </div>
+                    <div class="col-12">
+                        <label for="Address" class="form-label">Address</label>
+                        <input type="text"
+                               class="form-control text-muted"
+                               id="Address"
+                               readonly
+                               value="104 Thanh Thai Street, District 10, HCMC" />
+                    </div>
+                    <div class="col-12">
+                        <label for="EmailType" class="form-label"> Email Group </label>
+                        <select id="EmailType"
+                                class="form-select"
+                                aria-label="email templates"
+                                required>
+                            <option value="" selected disabled>-- Select Type --</option>
+                            <option value="1">Welcome Email</option>
+                            <option value="2">Happy Birth Day</option>
+                            <option value="3">Wellfare</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="EmailTemplate" class="form-label"> Email Template </label>
+                        <select id="EmailTemplate"
+                                class="form-select"
+                                aria-label="email templates"
+                                required>
+                            <option selected value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="SendDate" class="form-label">Send Date</label>
+                        <input type="date"
+                               class="form-control"
+                               id="SendDate"
+                               title="Send Date"
+                               required />
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary text-uppercase w-50">
+                            Add Schedule
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive overflow-auto" style="max-height: 50vh">
+                    <table class="table table-borderless table-hover caption-top">
+                        <caption>
+                            List of schedules
+                        </caption>
+                        <thead class="border-bottom">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Template</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Welcome Email</td>
+                                <td>23/07/2023</td>
+                                <td class="text-success">Success</td>
+                                <td>
+                                    <div class="btn btn-danger"
+                                         data-bs-toggle="modal"
+                                         data-bs-target="#confirmation-modal">
+                                        Remove
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Welcome Email</td>
+                                <td>23/07/2023</td>
+                                <td class="text-warning">Waiting</td>
+                                <td>
+                                    <div class="btn btn-danger"
+                                         data-bs-toggle="modal"
+                                         data-bs-target="#confirmation-modal">
+                                        Remove
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Welcome Email</td>
+                                <td>23/07/2023</td>
+                                <td class="text-danger">Failure</td>
+                                <td>
+                                    <div class="btn btn-danger"
+                                         data-bs-toggle="modal"
+                                         data-bs-target="#confirmation-modal">
+                                        Remove
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,5 @@
+.vs
+KimMong/bin
+KimMong/obj
+node_modules
+*.csproj
